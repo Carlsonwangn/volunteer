@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+  background-image:url(../img/807252302933528262.jpg);
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+
+.placeholder{
+  height: 330px;
+  width: 100%;
+}
+.nav li {
+  background-color:aqua;
+  padding: 8px 15px;
+  float: left;
+  list-style: none;
+  color:#fff;
+  width: 20%;
+  border-left:1px solid white;
+}
+.nav li:hover{
+  background-color:cadetblue;
+}
+
+
+.searchbutton{
+  
+  height: 30px;
+  width: 45px;
+  float: right;
+  border: none;
+  background-size: 100% 100%;
+  background-image: url(../img/se.png);
+  
+  border-radius: 50%;
+
+}
+.searbox{
+  position: relative;
+  height: 35px;
+  right: 70px;
+  right: 205px;
+  bottom: 25px;
+}
+.search{
+  
+ height: 25px;
+ width: 280px;
+ float: right;
+ border-radius: 25px;
+}
+
+.id{
+  float: right;
+  margin-right: 30px;
+}
+h2{
+  text-align: center;
+}
