@@ -1,0 +1,11 @@
+.imgbox{
+    float: right;
+  height: 200px;
+  width: 50%;
+  background-color: transparent;
+}
+.imgbox img{
+    width: 90%;
+    height: 80%;
+    object-fit:contain;
+}
