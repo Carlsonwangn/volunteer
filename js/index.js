@@ -39,7 +39,7 @@ window.addEventListener('load', function() {
     // 如果当前为第五张图片，那么切换回第一张图片
     rightArrow.addEventListener('click', changeImage);
  
-    var timer = this.setInterval(changeImage, 6000);
+    var timer = this.setInterval(changeImage, 4000);
  
     function changeImage() {
         if (currentIndex < 4) {

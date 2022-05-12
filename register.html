@@ -1,17 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8">
+<title></title>
+	<link rel="stylesheet" href="css/register.css">
 </head>
+ 
 <body>
-    <h1>未完成</h1>    
-    <p>志愿队伍注册申请表单</p>
-        <form action="">
-            
-        </form>
-     
+	<div id="Layer1" style="position:absolute; width:100%; height:130%; background-color: snow; z-index:-1"  >
+<!-- 	<img src="1577435709324.jpg" alt=""/>-->
+	<img src="img/re.jpg"  width="100%"/>
+ </div>
+ <div style="height: 150px;">
+
+ </div>
+	<div class="reg_div">
+		<div class="h_title"><h3>志愿队伍注册表单</h3></div>
+   		<div class="h_hr"></div>
+		<form action="" method="get">
+<!--		onblur失去焦点事件，用户离开输入框时执行 JavaScript 代码-->
+		<label>队长id</label><input type="text" placeholder="请输入队长id" id="username"><br/>
+		<label>队伍人数</label><input type="text" placeholder="请输入队伍人数" id="number" "> <div id="test_password"></div>
+		<label>队伍名称</label><input type="text" placeholder="请选择名称" id="name" ><br/>
+		<label>手机</label><input type="tel" placeholder="请输入手机号" id="phone" onBlur="validate_phone(this.value)"><div id="test_phone"></div><br/>
+		<div class="submit_btn">注册</div>
+		<div class="reset_btn">重置</div>
+		
+	</form>	
+	</div>
+		
 </body>
+	
+    <script type="text/javascript">
+		
+		//选中的文本框高亮
+  		usernameobj=document.getElementById('username');
+  		numobj=document.getElementById('number');
+		nameobj=document.getElementById('name');
+  		phoneobj=document.getElementById('phone');
+  		
+		
+  		usernameobj.onfocus=function(){
+ 	 		this.style.outlineColor='green';
+  		}
+  		numobj.onfocus=function(){
+ 	 		this.style.outlineColor='blue';}
+  		nameobj.onfocus=function(){
+ 	 		this.style.outlineColor='yellow';
+  		}
+  		phoneobj.onfocus=function(){
+ 	 		this.style.outlineColor='red';
+  		}
+		
+	//函数 验证手机
+	function validate_phone(phone){
+  		//^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6-10}$
+		//测试密码：12345y
+  		var phoneReg=/^[1][3,4,5,6,7,8,9][0-9]{9}$/;
+  		if(phone != "" && phone.search(phoneReg) != -1)
+  		{
+  			document.getElementById("test_phone").innerHTML = "<font color='green' size='3px'>√手机格式正确</font>";
+			
+  		}else{
+  			document.getElementById("test_phone").innerHTML = "<font color='red' size='3px'>手机格式错误</font>";
+  			alert("请输入正确的手机格式!");
+  		}
+  	}
+		
+	</script>
 </html>
+ 

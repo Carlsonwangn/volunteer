@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+.submit_btn {
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    border: 1px #006600 solid;
+    text-align: center;
+    border-radius: 3px; /*圆角*/
+    background: #89CDEF;
+    margin-top: 20px;
+    margin-left: 60px;
+    /*	color:#FFF;*/
+}
+.submit_btn:hover {
+    background: #8BEFC1;
+    cursor: default;
+}
+.reset_btn {
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    border: 1px #006600 solid;
+    text-align: center;
+    border-radius: 3px; /*圆角*/
+    background: #89CDEF;
+    margin-top: 20px;
+    margin-left: 60px;
+    /*	color:#FFF;*/
+}
+.reset_btn:hover {
+    background: #8BEFC1;
+    cursor: default;
+}
+ 
+ 
+.reg_div {
+    width: 620px;
+    margin: auto;
+}
+.h_title {
+    text-align: center;
+	color: aliceblue;
+}
+.h_hr {
+    height: 2px;
+    background: #0CF;
+    margin-bottom: 15px;
+}
+ 
+form {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    color:aliceblue;
+/*	background: #F0953B;*/
+	border-color:#F0953B;
+	box-shadow: 0 0 15px #F0953B;
+    text-align: center;
+    width: 100px;
+    height: 28px;
+    padding-right: 10px;
+    /*    margin: 5px;*/
+}
+input {
+    width: 180px;
+    height: 28px;
+    border: #06f 1px solid;
+    border-radius: 3px;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-color: #03a9f4;
+    box-shadow: 0 0 15px #03a9f4;
+}
